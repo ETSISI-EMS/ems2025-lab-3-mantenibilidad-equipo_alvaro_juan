@@ -23,6 +23,13 @@ public class PosicionPersona {
 	public void setFechaPosicion(FechaHora fechaPosicion) {
 		this.fechaPosicion = fechaPosicion;
 	}
+	public PosicionPersona(){}
+	public PosicionPersona(Coordenada coordenada, String documento, FechaHora fechaPosicion)
+	{
+		this.coordenada = coordenada;
+		this.documento = documento;
+		this.fechaPosicion = fechaPosicion;
+	}
 	@Override
 	public String toString() {
 		String cadena = "";
